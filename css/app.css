@@ -195,7 +195,7 @@ a:hover {
 /* HERO */
 
 .hero-section {
-  background: url("/img/hero-img.png") 50% no-repeat;
+  background: url("../img/hero-img.png") 50% no-repeat;
   background-size: cover;
   height: 65.45vh;
   text-align: center;
@@ -460,7 +460,7 @@ select.island-option-selection {
   -webkit-box-shadow: 2px 6px 10px -6px rgba(0, 0, 0, 0.34);
   box-shadow: 2px 6px 10px -6px rgba(0, 0, 0, 0.34);
   max-width: 670px;
-  background: #fff url("/img/rounded-rectangle.png") right center no-repeat;
+  background: #fff url("../img/rounded-rectangle.png") right center no-repeat;
   background-position: calc(100% - 22px) center;
   border: none;
 }
@@ -499,7 +499,7 @@ select.island-option-selection::placeholder {
 .expereience-tahiti {
   margin-bottom: 64px;
   padding-top: 4.1rem;
-  background: url("/img/expereience-tahiti-bg.png") no-repeat;
+  background: url("../img/expereience-tahiti-bg.png") no-repeat;
   color: #fff;
   -webkit-box-shadow: inset 0px 210px 157px -79px rgba(0, 0, 0, 0.61);
   box-shadow: inset 0px 210px 157px -79px rgba(0, 0, 0, 0.61);
@@ -567,7 +567,7 @@ select.island-option-selection::placeholder {
 /* BOOK NOW */
 .book-now {
   padding: 135px;
-  background: url("/img/book-now-bg.png") no-repeat;
+  background: url("../img/book-now-bg.png") no-repeat;
 }
 .book-now__title {
   font-family: "Gotham", "Open sans", sans-serif;
@@ -766,7 +766,7 @@ select.island-option-selection::placeholder {
   }
   select.island-option-selection {
     padding: 15px 2px 10px 10px;
-    background: #fff url("/img/rounded-rectangle.png") right center no-repeat;
+    background: #fff url("../img/rounded-rectangle.png") right center no-repeat;
     background-position: calc(100% - 2px) center;
   }
   .section-title {
