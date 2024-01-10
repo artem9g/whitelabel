@@ -2,35 +2,36 @@
 
 @font-face {
   font-family: "GothamNarrow-BookItalic";
-  src: url("/fonts/GothamNarrow-BookItalic.eot");
-  src: url("/fonts/GothamNarrow-BookItalic.eot?#iefix") format("embedded-opentype"), url("./GothamNarrow-BookItalic.woff2") format("woff2"),
-    url("/fonts/GothamNarrow-BookItalic.woff") format("woff"), url("./GothamNarrow-BookItalic.otf") format("otf"),
+  src: url("./GothamNarrow-BookItalic.woff2") format("woff2"), url("/fonts/GothamNarrow-BookItalic.woff") format("woff"),
+    url("/fonts/GothamNarrow-BookItalic.eot?#iefix") format("embedded-opentype"), url("./GothamNarrow-BookItalic.otf") format("otf"),
     url("/fonts/GothamNarrow-BookItalic.ttf") format("truetype");
+  src: url("/fonts/GothamNarrow-BookItalic.eot");
 }
 
 @font-face {
   font-family: "Gotham";
+  src: local("Gotham Book"), local("Gotham-Book"), url("/fonts/Gotham-Book.woff2") format("woff2"), url("/fonts/Gotham-Book.woff") format("woff"),
+    url("/fonts/Gotham-Book.eot?#iefix") format("embedded-opentype"), url("/fonts/Gotham-Book.ttf") format("truetype");
   src: url("/fonts/Gotham-Book.eot");
-  src: local("Gotham Book"), local("Gotham-Book"), url("/fonts/Gotham-Book.eot?#iefix") format("embedded-opentype"),
-    url("/fonts/Gotham-Book.woff2") format("woff2"), url("/fonts/Gotham-Book.woff") format("woff"), url("/fonts/Gotham-Book.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Gotham";
+  src: local("Gotham Light"), local("Gotham-Light"), url("/fonts/Gotham-Light.woff2") format("woff2"), url("/fonts/Gotham-Light.woff") format("woff"),
+    url("/fonts/Gotham-Light.eot?#iefix") format("embedded-opentype"), url("/fonts/Gotham-Light.ttf") format("truetype");
   src: url("/fonts/Gotham-Light.eot");
-  src: local("Gotham Light"), local("Gotham-Light"), url("/fonts/Gotham-Light.eot?#iefix") format("embedded-opentype"),
-    url("/fonts/Gotham-Light.woff2") format("woff2"), url("/fonts/Gotham-Light.woff") format("woff"), url("/fonts/Gotham-Light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Gotham";
+  src: local("Gotham Bold"), local("Gotham-Bold"), url("/fonts/Gotham-Bold.woff2") format("woff2"), url("/fonts/Gotham-Bold.woff") format("woff"),
+    url("/fonts/Gotham-Bold.eot?#iefix") format("embedded-opentype"), url("/fonts/Gotham-Bold.ttf") format("truetype");
   src: url("/fonts/Gotham-Bold.eot");
-  src: local("Gotham Bold"), local("Gotham-Bold"), url("/fonts/Gotham-Bold.eot?#iefix") format("embedded-opentype"),
-    url("/fonts/Gotham-Bold.woff2") format("woff2"), url("/fonts/Gotham-Bold.woff") format("woff"), url("/fonts/Gotham-Bold.ttf") format("truetype");
+
   font-weight: bold;
   font-style: normal;
 }
@@ -221,16 +222,16 @@ a:hover {
 .hero-section .hero-section-text h4 {
   font-family: "Gotham", "Open sans", sans-serif;
   font-weight: 300;
-  font-size: 1.6rem;
+  font-size: 2rem;
 }
 .hero-section .hero-section-text h1 span {
   font-family: "Gotham", "Open sans", sans-serif;
-  font-weight: 400;
+  font-weight: 700;
 }
 .hero-section .hero-section-text h1 {
   font-family: "Gotham", "Open sans", sans-serif;
   font-weight: 300;
-  font-size: 3rem;
+  font-size: 4rem;
   text-transform: uppercase;
 }
 .grid-large {
@@ -701,7 +702,7 @@ select.island-option-selection::placeholder {
     font-size: 4rem;
   }
   .hero-section .hero-section-text h4 {
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
   .top-bar {
     min-height: 100px;
@@ -788,9 +789,9 @@ select.island-option-selection::placeholder {
   .book-now__content {
     padding: 20px 28px;
   }
-
   .footer__column {
-    min-width: 150px;
+    min-width: 180px;
+    max-width: 220px;
     margin-right: 0;
   }
   .expereience-tahiti__titles {
@@ -798,6 +799,12 @@ select.island-option-selection::placeholder {
   }
   .discover-tahiti__text {
     font-size: 1rem;
+  }
+  .footer__logo img {
+    margin-right: 10px;
+  }
+  .grid-margin-y > .cell.social-buttons {
+    margin-bottom: 20px;
   }
 }
 
@@ -832,12 +839,16 @@ select.island-option-selection::placeholder {
   .expereience-tahiti__titles {
     margin-bottom: 10rem;
   }
+  .footer__logo img {
+    margin-right: 10px;
+  }
 }
 
 /* 1150px */
 @media screen and (max-width: 71.875em) {
   .book-now__content {
-    padding: 52.5px 28px;
+    padding: 52.5px 28px 26px;
+    margin-bottom: 24px;
   }
 }
 
@@ -859,6 +870,9 @@ select.island-option-selection::placeholder {
   }
   .why-tahiti__content p {
     margin-bottom: 0;
+  }
+  .why-tahiti__content {
+    gap: 30px;
   }
 }
 /* 1200px */
