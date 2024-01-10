@@ -364,13 +364,13 @@ a:hover {
 .arrow-button {
   padding: 0;
   margin: 0;
-  background: none;
+  background: transparent;
   -webkit-transition: all 0.4s ease;
   -o-transition: all 0.4s ease;
   transition: all 0.4s ease;
 }
 .arrow-button:hover {
-  background: none;
+  background: transparent;
   -webkit-transform: translate(16px);
   -ms-transform: translate(16px);
   transform: translate(16px);
@@ -380,7 +380,7 @@ a:hover {
   transition: all 0.4s ease;
 }
 .arrow-button:active {
-  background: none;
+  background: transparent;
   border: solid 1px;
   border-radius: 20px;
   -webkit-transition: all 0s ease;
@@ -388,10 +388,10 @@ a:hover {
   transition: all 0s ease;
 }
 .arrow-button:visited {
-  background-color: none;
+  background-color: transparent;
 }
 button.arrow-button:focus {
-  background-color: none;
+  background-color: transparent;
 }
 .button:active {
   border: solid 1px #fff;
