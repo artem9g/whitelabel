@@ -13,7 +13,7 @@
   src: local("Gotham Book"), local("Gotham-Book"), url("/fonts/Gotham-Book.woff2") format("woff2"), url("/fonts/Gotham-Book.woff") format("woff"),
     url("/fonts/Gotham-Book.eot?#iefix") format("embedded-opentype"), url("/fonts/Gotham-Book.ttf") format("truetype");
   src: url("/fonts/Gotham-Book.eot");
-  font-weight: normal;
+  font-weight: 400;
   font-style: normal;
 }
 
@@ -26,12 +26,18 @@
   font-style: normal;
 }
 
-@font-face {
+/* @font-face {
   font-family: "Gotham";
   src: local("Gotham Bold"), local("Gotham-Bold"), url("/fonts/Gotham-Bold.woff2") format("woff2"), url("/fonts/Gotham-Bold.woff") format("woff"),
     url("/fonts/Gotham-Bold.eot?#iefix") format("embedded-opentype"), url("/fonts/Gotham-Bold.ttf") format("truetype");
   src: url("/fonts/Gotham-Bold.eot");
   font-weight: bold;
+  font-style: normal;
+} */
+@font-face {
+  font-family: "Gotham";
+  src: url("fonts/Gotham-Bold.woff2") format("woff2"), url("fonts/Gotham-Bold.woff") format("woff");
+  font-weight: 700;
   font-style: normal;
 }
 
@@ -82,7 +88,7 @@ a:hover {
 
 a.logo-title-block {
   font-size: 38px;
-  font-family: "Gotham";
+  font-family: "Gotham", "Open sans", sans-serif;
   font-weight: 400;
   letter-spacing: 0;
   vertical-align: middle;
@@ -123,7 +129,7 @@ a.logo-title-block {
   -o-transition: color 0.15s ease-in;
   transition: color 0.15s ease-in;
   font-size: 18px;
-  font-family: "Gotham";
+  font-family: "Gotham", "Open sans", sans-serif;
   text-transform: uppercase;
   font-weight: 400;
   padding-top: 10px;
@@ -788,10 +794,13 @@ select.island-option-selection::placeholder {
     padding: 20px 28px;
   }
   .footer__column {
-    min-width: 220px;
-    max-width: 250px;
+    /* min-width: 220px;
+    max-width: 250px; */
     margin-right: 0;
     margin-bottom: 10px;
+  }
+  .footer__column {
+    padding-left: 30px;
   }
   .footer__column ul li {
     margin-bottom: 10px;
