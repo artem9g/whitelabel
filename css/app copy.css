@@ -2,35 +2,35 @@
 
 @font-face {
   font-family: "GothamNarrow-BookItalic";
-  src: url("./GothamNarrow-BookItalic.woff2") format("woff2"), url("/fonts/GothamNarrow-BookItalic.woff") format("woff"),
-    url("/fonts/GothamNarrow-BookItalic.eot?#iefix") format("embedded-opentype"), url("./GothamNarrow-BookItalic.otf") format("otf"),
-    url("/fonts/GothamNarrow-BookItalic.ttf") format("truetype");
   src: url("/fonts/GothamNarrow-BookItalic.eot");
+  src: url("/fonts/GothamNarrow-BookItalic.eot?#iefix") format("embedded-opentype"), url("./GothamNarrow-BookItalic.woff2") format("woff2"),
+    url("/fonts/GothamNarrow-BookItalic.woff") format("woff"), url("./GothamNarrow-BookItalic.otf") format("otf"),
+    url("/fonts/GothamNarrow-BookItalic.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Gotham";
-  src: local("Gotham Book"), local("Gotham-Book"), url("/fonts/Gotham-Book.woff2") format("woff2"), url("/fonts/Gotham-Book.woff") format("woff"),
-    url("/fonts/Gotham-Book.eot?#iefix") format("embedded-opentype"), url("/fonts/Gotham-Book.ttf") format("truetype");
   src: url("/fonts/Gotham-Book.eot");
+  src: local("Gotham Book"), local("Gotham-Book"), url("/fonts/Gotham-Book.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/Gotham-Book.woff2") format("woff2"), url("/fonts/Gotham-Book.woff") format("woff"), url("/fonts/Gotham-Book.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Gotham";
-  src: local("Gotham Light"), local("Gotham-Light"), url("/fonts/Gotham-Light.woff2") format("woff2"), url("/fonts/Gotham-Light.woff") format("woff"),
-    url("/fonts/Gotham-Light.eot?#iefix") format("embedded-opentype"), url("/fonts/Gotham-Light.ttf") format("truetype");
   src: url("/fonts/Gotham-Light.eot");
+  src: local("Gotham Light"), local("Gotham-Light"), url("/fonts/Gotham-Light.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/Gotham-Light.woff2") format("woff2"), url("/fonts/Gotham-Light.woff") format("woff"), url("/fonts/Gotham-Light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Gotham";
-  src: local("Gotham Bold"), local("Gotham-Bold"), url("/fonts/Gotham-Bold.woff2") format("woff2"), url("/fonts/Gotham-Bold.woff") format("woff"),
-    url("/fonts/Gotham-Bold.eot?#iefix") format("embedded-opentype"), url("/fonts/Gotham-Bold.ttf") format("truetype");
   src: url("/fonts/Gotham-Bold.eot");
+  src: local("Gotham Bold"), local("Gotham-Bold"), url("/fonts/Gotham-Bold.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/Gotham-Bold.woff2") format("woff2"), url("/fonts/Gotham-Bold.woff") format("woff"), url("/fonts/Gotham-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
 }
@@ -42,23 +42,17 @@ a:hover {
 .button:hover,
 .button:focus {
   background-color: #ee2255;
-  -webkit-transition: all 0.4s ease;
-  -o-transition: all 0.4s ease;
   transition: all 0.4s ease;
 }
 
 .discover-tahiti__button:hover,
 .discover-tahiti__button:focus {
   background-color: #3dbe98;
-  -webkit-transition: all 0.4s ease;
-  -o-transition: all 0.4s ease;
   transition: all 0.4s ease;
 }
 
 .button,
 .button {
-  -webkit-transition: all 0.4s ease;
-  -o-transition: all 0.4s ease;
   transition: all 0.4s ease;
 }
 .grid-container {
@@ -79,13 +73,16 @@ a:hover {
   margin-right: 0px;
   padding-bottom: 6px;
 }
+.site-name {
+}
 
-a.logo-title-block {
+.logo-title-block {
   font-size: 38px;
   font-family: "Gotham";
   font-weight: 400;
   letter-spacing: 0;
   vertical-align: middle;
+  /* letter-spacing: 1px; */
 }
 
 .topbar-responsive .menu {
@@ -119,8 +116,6 @@ a.logo-title-block {
 
 .topbar-responsive .menu a {
   color: #ee2255;
-  -webkit-transition: color 0.15s ease-in;
-  -o-transition: color 0.15s ease-in;
   transition: color 0.15s ease-in;
   font-size: 18px;
   font-family: "Gotham";
@@ -139,8 +134,6 @@ a.logo-title-block {
   color: #3dbe98;
   border-color: #3dbe98;
   border-radius: 5000px;
-  -webkit-transition: color 0.15s ease-in, border-color 0.15s ease-in;
-  -o-transition: color 0.15s ease-in, border-color 0.15s ease-in;
   transition: color 0.15s ease-in, border-color 0.15s ease-in;
 }
 
@@ -148,6 +141,7 @@ a.logo-title-block {
   color: #000;
   border-color: #000;
 }
+
 @-webkit-keyframes fadeIn {
   from {
     opacity: 0;
@@ -156,6 +150,7 @@ a.logo-title-block {
     opacity: 1;
   }
 }
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -164,6 +159,7 @@ a.logo-title-block {
     opacity: 1;
   }
 }
+
 @-webkit-keyframes slideDown {
   0% {
     -webkit-transform: translateY(-100%);
@@ -174,6 +170,7 @@ a.logo-title-block {
     transform: translateY(0%);
   }
 }
+
 @keyframes slideDown {
   0% {
     -webkit-transform: translateY(-100%);
@@ -194,18 +191,19 @@ a.logo-title-block {
 /* HERO */
 
 .hero-section {
-  background: url("../img/hero-img.png") 50% no-repeat;
+  /* max-width: 1440px; */
+  background: url("/img/hero-img.png") 50% no-repeat;
   background-size: cover;
   height: 65.45vh;
   text-align: center;
+  display: -webkit-flex;
   display: -ms-flexbox;
-  display: -webkit-box;
   display: flex;
+  -webkit-align-items: center;
   -ms-flex-align: center;
-  -webkit-box-align: center;
   align-items: center;
+  -webkit-justify-content: center;
   -ms-flex-pack: center;
-  -webkit-box-pack: center;
   justify-content: center;
 }
 
@@ -220,18 +218,19 @@ a.logo-title-block {
 .hero-section .hero-section-text h4 {
   font-family: "Gotham", "Open sans", sans-serif;
   font-weight: 300;
-  font-size: 2rem;
+  font-size: 1.6rem;
 }
 .hero-section .hero-section-text h1 span {
   font-family: "Gotham", "Open sans", sans-serif;
-  font-weight: 700;
+  font-weight: 400;
 }
 .hero-section .hero-section-text h1 {
   font-family: "Gotham", "Open sans", sans-serif;
   font-weight: 300;
-  font-size: 4rem;
+  font-size: 3rem;
   text-transform: uppercase;
 }
+
 .grid-large {
   max-width: 90rem;
 }
@@ -263,6 +262,7 @@ a.logo-title-block {
   background: #fbfbed;
 }
 .cell.discover-tahiti__titles {
+  /* padding: 0; */
   margin-bottom: 2.35rem;
 }
 
@@ -270,12 +270,8 @@ a.logo-title-block {
 .discover-tahiti__cards {
   width: 100%;
   margin-bottom: 2.35rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-left: 4px;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
 }
 .product-card:not(:last-child) {
@@ -283,6 +279,7 @@ a.logo-title-block {
 }
 .product-card {
   background-color: #fff;
+  /* margin-bottom: 1.5rem; */
   min-width: 285px;
   max-width: 285px;
 }
@@ -307,11 +304,7 @@ a.logo-title-block {
 .product-card__bottom {
   background: #3dbe98;
   padding: 13px 17px 17px 18px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
   justify-content: space-between;
   max-width: 285px;
 }
@@ -363,34 +356,26 @@ a.logo-title-block {
 .arrow-button {
   padding: 0;
   margin: 0;
-  background: transparent;
-  -webkit-transition: all 0.4s ease;
-  -o-transition: all 0.4s ease;
+  background: none;
   transition: all 0.4s ease;
 }
 .arrow-button:hover {
-  background: transparent;
-  -webkit-transform: translate(16px);
-  -ms-transform: translate(16px);
+  background: none;
   transform: translate(16px);
   padding: 0 10px 0 20px;
-  -webkit-transition: all 0.4s ease;
-  -o-transition: all 0.4s ease;
   transition: all 0.4s ease;
 }
 .arrow-button:active {
-  background: transparent;
+  background: none;
   border: solid 1px;
   border-radius: 20px;
-  -webkit-transition: all 0s ease;
-  -o-transition: all 0s ease;
   transition: all 0s ease;
 }
 .arrow-button:visited {
-  background-color: transparent;
+  background-color: none;
 }
 button.arrow-button:focus {
-  background-color: transparent;
+  background-color: none;
 }
 .button:active {
   border: solid 1px #fff;
@@ -400,9 +385,13 @@ button.arrow-button:focus {
 .arrow-button:focus {
   background-color: transparent;
 }
+.card-select .button {
+}
+
 .card-select .button:after {
   content: "";
 }
+
 .card-select .button:hover {
   background-color: #ee2255;
 }
@@ -413,10 +402,7 @@ button.arrow-button:focus {
 
 .card-select.is-selected {
   border: 1px solid #ee2255;
-  -webkit-box-shadow: 0 0 10px #e6e6e6;
   box-shadow: 0 0 10px #e6e6e6;
-  -webkit-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 
@@ -457,35 +443,12 @@ select.island-option-selection {
   height: 60px;
   padding: 15px 24px 15px 20px;
   -webkit-box-shadow: 2px 6px 10px -6px rgba(0, 0, 0, 0.34);
+  -moz-box-shadow: 2px 6px 10px -6px rgba(0, 0, 0, 0.34);
   box-shadow: 2px 6px 10px -6px rgba(0, 0, 0, 0.34);
   max-width: 670px;
-  background: #fff url("../img/rounded-rectangle.png") right center no-repeat;
+  background: #fff url("/img/rounded-rectangle.png") right center no-repeat;
   background-position: calc(100% - 22px) center;
   border: none;
-}
-select.island-option-selection::-webkit-input-placeholder {
-  color: #333;
-  font-family: "Gotham", "Open sans", sans-serif;
-  font-weight: 400;
-  font-size: 1.25rem;
-}
-select.island-option-selection::-moz-placeholder {
-  color: #333;
-  font-family: "Gotham", "Open sans", sans-serif;
-  font-weight: 400;
-  font-size: 1.25rem;
-}
-select.island-option-selection:-ms-input-placeholder {
-  color: #333;
-  font-family: "Gotham", "Open sans", sans-serif;
-  font-weight: 400;
-  font-size: 1.25rem;
-}
-select.island-option-selection::-ms-input-placeholder {
-  color: #333;
-  font-family: "Gotham", "Open sans", sans-serif;
-  font-weight: 400;
-  font-size: 1.25rem;
 }
 select.island-option-selection::placeholder {
   color: #333;
@@ -498,9 +461,10 @@ select.island-option-selection::placeholder {
 .expereience-tahiti {
   margin-bottom: 64px;
   padding-top: 4.1rem;
-  background: url("../img/expereience-tahiti-bg.png") no-repeat;
+  background: url("/img/expereience-tahiti-bg.png") no-repeat;
   color: #fff;
   -webkit-box-shadow: inset 0px 210px 157px -79px rgba(0, 0, 0, 0.61);
+  -moz-box-shadow: inset 0px 210px 157px -79px rgba(0, 0, 0, 0.61);
   box-shadow: inset 0px 210px 157px -79px rgba(0, 0, 0, 0.61);
 }
 .expereience-tahiti .section-subtitle {
@@ -526,7 +490,8 @@ select.island-option-selection::placeholder {
   text-align: center;
   margin-bottom: 34px;
 }
-
+.discover-tahiti {
+}
 .discover-tahiti__button {
   padding: 15px 2px 15px 5px;
   background: #ee2255;
@@ -539,7 +504,12 @@ select.island-option-selection::placeholder {
   text-transform: uppercase;
   margin-bottom: 80px;
 }
-
+.expereience-tahiti__content {
+}
+.section-title {
+}
+.section-subtitle {
+}
 /* ------------------------ WHY TAHITI */
 
 .why-tahiti {
@@ -566,7 +536,7 @@ select.island-option-selection::placeholder {
 /* BOOK NOW */
 .book-now {
   padding: 135px;
-  background: url("../img/book-now-bg.png") no-repeat;
+  background: url("/img/book-now-bg.png") no-repeat;
 }
 .book-now__title {
   font-family: "Gotham", "Open sans", sans-serif;
@@ -616,15 +586,11 @@ select.island-option-selection::placeholder {
 .footer__columns {
   color: #ee2255;
   padding-top: 8px;
-  -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
   min-width: 605px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-column-gap: 88px;
-  -moz-column-gap: 88px;
   column-gap: 88px;
+  /* justify-content: space-between; */
 }
 .footer__column:not(:last-child) {
   margin-right: 0px;
@@ -633,13 +599,14 @@ select.island-option-selection::placeholder {
   font-family: "Gotham", "Open sans", sans-serif;
   font-weight: 300;
   font-size: 1rem;
+  /* margin-right: 90px; */
 }
-
+.footer__column:last-child {
+}
 .footer__logo {
   margin-right: 85px;
 }
 .footer__logo img {
-  -o-object-fit: contain;
   object-fit: contain;
 }
 
@@ -664,6 +631,8 @@ select.island-option-selection::placeholder {
 .footer__column ul {
   margin-left: 0;
 }
+.footer__container {
+}
 .social-buttons {
   padding-top: 16px;
 }
@@ -679,8 +648,6 @@ select.island-option-selection::placeholder {
   padding: 0;
   text-decoration: none;
   border-radius: 1.6875rem;
-  -webkit-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
   margin-bottom: 0.25rem;
 }
@@ -700,7 +667,7 @@ select.island-option-selection::placeholder {
     font-size: 4rem;
   }
   .hero-section .hero-section-text h4 {
-    font-size: 1.6rem;
+    font-size: 2rem;
   }
   .top-bar {
     min-height: 100px;
@@ -765,7 +732,7 @@ select.island-option-selection::placeholder {
   }
   select.island-option-selection {
     padding: 15px 2px 10px 10px;
-    background: #fff url("../img/rounded-rectangle.png") right center no-repeat;
+    background: #fff url("/img/rounded-rectangle.png") right center no-repeat;
     background-position: calc(100% - 2px) center;
   }
   .section-title {
@@ -775,28 +742,17 @@ select.island-option-selection::placeholder {
     text-align: center;
   }
   .footer__columns {
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     flex-direction: column;
     min-width: 200px;
   }
   .book-now__content {
     padding: 20px 28px;
   }
+
   .footer__column {
-    min-width: 220px;
-    max-width: 250px;
+    min-width: 150px;
     margin-right: 0;
-    margin-bottom: 10px;
-  }
-  .footer__column ul li {
-    margin-bottom: 10px;
-    font-size: 1.2rem;
-    line-height: 1.5;
   }
   .expereience-tahiti__titles {
     margin-bottom: 3.5rem;
@@ -804,15 +760,9 @@ select.island-option-selection::placeholder {
   .discover-tahiti__text {
     font-size: 1rem;
   }
-  .footer__logo img {
-    margin-right: 10px;
-  }
-  .grid-margin-y > .cell.social-buttons {
-    margin-bottom: 20px;
-  }
 }
 
-/* Medium only  640-1 022,992px*/
+/* Medium only  640-1 022,992px*/
 @media screen and (min-width: 40em) and (max-width: 63.9375em) {
   .topbar-responsive .menu a {
     font-size: 16px;
@@ -843,48 +793,34 @@ select.island-option-selection::placeholder {
   .expereience-tahiti__titles {
     margin-bottom: 10rem;
   }
-  .footer__logo img {
-    margin-right: 10px;
-  }
 }
 
 /* 1150px */
 @media screen and (max-width: 71.875em) {
   .book-now__content {
-    padding: 52.5px 28px 26px;
-    margin-bottom: 24px;
+    padding: 52.5px 28px;
   }
 }
 
-/* 1 022,992px  */
+/* 1 022,992px  */
 @media screen and (max-width: 63.9375em) {
   .footer__columns {
-    -ms-flex-pack: distribute;
     justify-content: space-around;
   }
   .footer__logo {
     margin-right: 0px;
     text-align: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
   }
   .why-tahiti__content p {
     margin-bottom: 0;
-  }
-  .why-tahiti__content {
-    gap: 30px;
   }
 }
 /* 1200px */
 @media screen and (min-width: 63.9375em) and (max-width: 75em) {
   .footer__columns {
     min-width: 400px;
-    -webkit-column-gap: 20px;
-    -moz-column-gap: 20px;
     column-gap: 20px;
   }
 }
